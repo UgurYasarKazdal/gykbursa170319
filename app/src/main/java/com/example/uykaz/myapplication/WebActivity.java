@@ -21,7 +21,7 @@ public class WebActivity extends Activity {
 
         mWebView = findViewById(R.id.webView_web);
 
-     mWebView.getSettings().setJavaScriptEnabled(true);
+        mWebView.getSettings().setJavaScriptEnabled(true);
 
         openWebPage();
     }
