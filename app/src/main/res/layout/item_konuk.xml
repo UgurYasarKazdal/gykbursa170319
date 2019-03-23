@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/konuk_arkaplan">
+
+    <TextView
+        android:id="@+id/tv_konuk_ad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Ad" />
+
+    <TextView
+        android:id="@+id/tv_konuk_yas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_konuk_ad"
+        android:layout_alignStart="@+id/tv_konuk_ad"
+        android:layout_alignParentStart="false"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="Yaş" />
+
+    <TextView
+        android:id="@+id/tv_konuk_dogumYeri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_konuk_yas"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:background="@color/color_dogumYeri"
+        android:text="Doğum Yeri" />
+</RelativeLayout>

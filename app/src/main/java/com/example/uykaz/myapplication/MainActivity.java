@@ -15,7 +15,24 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        tv_Kek = findViewById(R.id.tv_main_kek);
+        findViewById(R.id.btn_main_smsGonder).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, SmsActivity.class));
+
+            }
+        });
+
+
+        findViewById(R.id.btn_main_webGoster).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, WebActivity.class));
+            }
+        });
+
+/*        tv_Kek = findViewById(R.id.tv_main_kek);
+
         Action kek = new Action();
 
         String olduMu = kek.kekYap();
@@ -32,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivityForResult(intent, 1);
 
             }
-        });
+        });*/
 
     }
 

@@ -1,4 +1,4 @@
-package com.example.uykaz.myapplication;
+package com.example.uykaz.myapplication.models.malzemeler;
 
 public class Ogrenci {
     public int resim;

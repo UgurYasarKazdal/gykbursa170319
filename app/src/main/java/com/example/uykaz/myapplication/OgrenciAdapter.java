@@ -7,6 +7,8 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.uykaz.myapplication.models.malzemeler.Ogrenci;
+
 import java.util.ArrayList;
 
 public class OgrenciAdapter extends BaseAdapter {
@@ -46,7 +48,6 @@ public class OgrenciAdapter extends BaseAdapter {
         resim.setImageResource(ogrenciler.get(position).resim);
         tv_isim.setText(ogrenciler.get(position).getIsimSoyisim());
         tv_dogumTarihi.setText(ogrenciler.get(position).dogumTarihi);
-
         return v;
     }
 

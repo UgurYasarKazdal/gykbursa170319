@@ -1,4 +1,4 @@
-package com.example.uykaz.myapplication.malzemeler;
+package com.example.uykaz.myapplication.models.malzemeler;
 
 public class Yag extends Malzeme {
     private int asit;

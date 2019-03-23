@@ -2,9 +2,9 @@ package com.example.uykaz.myapplication;
 
 import android.util.Log;
 
-import com.example.uykaz.myapplication.malzemeler.Seker;
-import com.example.uykaz.myapplication.malzemeler.Un;
-import com.example.uykaz.myapplication.malzemeler.Yag;
+import com.example.uykaz.myapplication.models.malzemeler.Seker;
+import com.example.uykaz.myapplication.models.malzemeler.Un;
+import com.example.uykaz.myapplication.models.malzemeler.Yag;
 
 public class Action {
 

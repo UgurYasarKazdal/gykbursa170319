@@ -1,4 +1,4 @@
-package com.example.uykaz.myapplication.malzemeler;
+package com.example.uykaz.myapplication.models.malzemeler;
 
 public class Un extends Malzeme{
     private String marka;
