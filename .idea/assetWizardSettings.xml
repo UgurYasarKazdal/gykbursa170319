@@ -23,7 +23,7 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="scalingPercent" value="95" />
+                                                <entry key="scalingPercent" value="82" />
                                                 <entry key="trimmed" value="true" />
                                               </map>
                                             </option>
@@ -35,11 +35,13 @@
                                   <option name="values">
                                     <map>
                                       <entry key="backgroundAssetType" value="COLOR" />
-                                      <entry key="backgroundColor" value="a6682a" />
+                                      <entry key="backgroundColor" value="fbfff9" />
                                       <entry key="backgroundLayerName" value="ic_launcher_background" />
-                                      <entry key="foregroundImage" value="C:\DEV\tyronlannister.png" />
-                                      <entry key="foregroundLayerName" value="ic_launcher_foreground" />
-                                      <entry key="outputName" value="ic_got" />
+                                      <entry key="foregroundImage" value="C:\162.png" />
+                                      <entry key="foregroundLayerName" value="ic_logo_1621" />
+                                      <entry key="legacyIconShape" value="CIRCLE" />
+                                      <entry key="outputName" value="ic_logo_162" />
+                                      <entry key="webIconShape" value="CIRCLE" />
                                     </map>
                                   </option>
                                 </PersistentState>
