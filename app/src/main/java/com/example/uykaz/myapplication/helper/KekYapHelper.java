@@ -1,4 +1,4 @@
-package com.example.uykaz.myapplication;
+package com.example.uykaz.myapplication.helper;
 
 import android.util.Log;
 
@@ -6,7 +6,7 @@ import com.example.uykaz.myapplication.models.malzemeler.Seker;
 import com.example.uykaz.myapplication.models.malzemeler.Un;
 import com.example.uykaz.myapplication.models.malzemeler.Yag;
 
-public class Action {
+public class KekYapHelper {
 
     private Seker mSeker = new Seker(true);
     private Un mUn = new Un();

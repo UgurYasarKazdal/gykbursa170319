@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CameraActivity">
+
+    <ImageButton
+        android:id="@+id/imgBtn_camera_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/ic_play_arrow_black_24dp"
+        app:layout_constraintEnd_toEndOf="@+id/btn_camera_videoGoster"
+        app:layout_constraintTop_toBottomOf="@+id/btn_camera_videoGoster" />
+
+    <ImageButton
+        android:id="@+id/imgBtn_camera_stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="12dp"
+        android:src="@drawable/ic_stop_black_24dp"
+        app:layout_constraintEnd_toStartOf="@+id/imgBtn_camera_play"
+        app:layout_constraintTop_toBottomOf="@+id/btn_camera_videoGoster" />
+
+    <Button
+        android:id="@+id/btn_camera_videoGoster"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="VIDEO ACTIVITY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.453"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/video_camera_video"
+        app:layout_constraintVertical_bias="0.527" />
+
+    <Button
+        android:id="@+id/btn_camera_resimGoster"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Resim Activity"
+        app:layout_constraintBottom_toTopOf="@+id/btn_camera_videoGoster"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.456"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/video_camera_video"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <VideoView
+        android:id="@+id/video_camera_video"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_camera_resim" />
+
+    <ImageView
+        android:id="@+id/img_camera_resim"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/kralice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

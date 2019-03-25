@@ -4,6 +4,8 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.widget.ListView;
 
+import com.example.uykaz.myapplication.adapter.KonukAdapter;
+import com.example.uykaz.myapplication.helper.StringHelper;
 import com.example.uykaz.myapplication.models.malzemeler.Konuk;
 
 import java.util.ArrayList;

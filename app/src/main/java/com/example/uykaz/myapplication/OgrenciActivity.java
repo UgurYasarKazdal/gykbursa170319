@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.example.uykaz.myapplication.adapter.OgrenciAdapter;
 import com.example.uykaz.myapplication.models.malzemeler.Ogrenci;
 
 import java.util.ArrayList;

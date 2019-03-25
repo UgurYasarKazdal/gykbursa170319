@@ -1,4 +1,4 @@
-package com.example.uykaz.myapplication;
+package com.example.uykaz.myapplication.helper;
 
 public class StringHelper {
 

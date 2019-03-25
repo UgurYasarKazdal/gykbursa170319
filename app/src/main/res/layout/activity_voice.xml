@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VoiceActivity">
+
+    <Button
+        android:id="@+id/btn_voice_play"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="56dp"
+        android:background="@drawable/ic_play_arrow_black_24dp"
+        app:layout_constraintEnd_toEndOf="@+id/img_voice_record"
+        app:layout_constraintTop_toBottomOf="@+id/img_voice_record" />
+
+    <ImageView
+        android:id="@+id/img_voice_record"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/ic_play_arrow_black_24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_voice_stop"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/ic_stop_black_24dp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_voice_play"
+        app:layout_constraintTop_toBottomOf="@+id/img_voice_record" />
+
+    <Button
+        android:id="@+id/btn_voice_record"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:background="@android:drawable/presence_audio_busy"
+        app:layout_constraintEnd_toStartOf="@+id/btn_voice_stop"
+        app:layout_constraintTop_toBottomOf="@+id/img_voice_record" />
+</android.support.constraint.ConstraintLayout>

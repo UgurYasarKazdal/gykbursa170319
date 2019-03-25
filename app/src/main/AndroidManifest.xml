@@ -2,8 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.uykaz.myapplication">
 
-    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
-
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_got"
@@ -12,6 +14,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".OgrenciActivity" />
+        <activity android:name=".DenemeActivity" />
+        <activity android:name=".KonukActivity" />
+        <activity android:name=".SmsActivity" />
+        <activity android:name=".WebActivity" />
+        <activity android:name=".CameraActivity"/>
+        <activity android:name=".CallActivity"/>
+        <activity android:name=".MapActivity"/>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,10 +28,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Main2" />
-        <activity android:name=".KonukActivity"></activity>
-        <activity android:name=".SmsActivity" />
-        <activity android:name=".WebActivity"></activity>
+
+        <activity android:name=".VoiceActivity">
+
+        </activity>
     </application>
 
 </manifest>

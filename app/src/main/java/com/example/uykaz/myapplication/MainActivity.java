@@ -1,71 +1,76 @@
 package com.example.uykaz.myapplication;
 
 import android.content.Intent;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.TextView;
+import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
-    TextView tv_Kek;
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+
+    Button openPhotoAndVideo;
+    Button openVoice;
+    Button openMap;
+    Button openWeb;
+    Button dialCall;
+    Button sendSms;
+    Button ogrenci;
+    Button konuk;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        findViewById(R.id.btn_main_smsGonder).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, SmsActivity.class));
-
-            }
-        });
-
-
-        findViewById(R.id.btn_main_webGoster).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, WebActivity.class));
-            }
-        });
-
-/*        tv_Kek = findViewById(R.id.tv_main_kek);
-
-        Action kek = new Action();
-
-        String olduMu = kek.kekYap();
-
-        tv_Kek.setText(olduMu);
-
-        tv_Kek.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent intent = new Intent(MainActivity.this, Main2.class);
-                intent.putExtra("emir", "bana isim gönder");
-                //    startActivity(intent);
-                startActivityForResult(intent, 1);
-
-            }
-        });*/
-
+        openPhotoAndVideo = (Button) findViewById(R.id.open_photo_and_video);
+        openPhotoAndVideo.setOnClickListener(this);
+        openVoice = (Button) findViewById(R.id.open_voice);
+        openVoice.setOnClickListener(this);
+        openMap = (Button) findViewById(R.id.open_map);
+        openMap.setOnClickListener(this);
+        openWeb = (Button) findViewById(R.id.open_web);
+        openWeb.setOnClickListener(this);
+        dialCall = (Button) findViewById(R.id.dial_call);
+        dialCall.setOnClickListener(this);
+        sendSms = (Button) findViewById(R.id.send_sms);
+        sendSms.setOnClickListener(this);
+        konuk = (Button) findViewById(R.id.btn_main_konuk);
+        konuk.setOnClickListener(this);
+        ogrenci = (Button) findViewById(R.id.btn_main_ogrenci);
+        ogrenci.setOnClickListener(this);
     }
 
     @Override
-    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
+    public void onClick(View view) {
+        if (view == openPhotoAndVideo) {
+            Intent photoAndVideoIntent = new Intent(MainActivity.this, CameraActivity.class);
+            startActivity(photoAndVideoIntent);
 
-        if (requestCode == 1) {
-            if (resultCode == RESULT_OK) {
-                tv_Kek.setText(data.getStringExtra("cevap"));
-            }
+        } else if (view == openVoice) {
+            Intent voiceIntent = new Intent(MainActivity.this, VoiceActivity.class);
+            startActivity(voiceIntent);
 
-            if (resultCode == RESULT_CANCELED) {
-                tv_Kek.setText("MAIN 2 CEVAP VERMEDİ");
-            }
+        } else if (view == openMap) {
+            Intent mapIntent = new Intent(MainActivity.this, MapActivity.class);
+            startActivity(mapIntent);
 
+        } else if (view == openWeb) {
+            Intent webIntent = new Intent(MainActivity.this, WebActivity.class);
+            startActivity(webIntent);
+
+        } else if (view == dialCall) {
+            Intent callIntent = new Intent(MainActivity.this, CallActivity.class);
+            startActivity(callIntent);
+        } else if (view == sendSms) {
+            Intent smsIntent = new Intent(MainActivity.this, SmsActivity.class);
+            startActivity(smsIntent);
+        } else if (view == konuk) {
+            Intent konukIntent = new Intent(MainActivity.this, KonukActivity.class);
+            startActivity(konukIntent);
+        } else if (view == ogrenci) {
+            Intent ogrenciIntent = new Intent(MainActivity.this, OgrenciActivity.class);
+            startActivity(ogrenciIntent);
         }
     }
 }

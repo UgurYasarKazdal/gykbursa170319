@@ -1,4 +1,4 @@
-package com.example.uykaz.myapplication;
+package com.example.uykaz.myapplication.adapter;
 
 import android.content.Context;
 import android.view.View;
@@ -7,6 +7,7 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.uykaz.myapplication.R;
 import com.example.uykaz.myapplication.models.malzemeler.Ogrenci;
 
 import java.util.ArrayList;

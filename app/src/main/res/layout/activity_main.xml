@@ -1,46 +1,133 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="20dp"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/btn_main_webGoster"
-        android:layout_width="85dp"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:text="WebView Aç"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_main_smsGonder" />
+        android:layout_gravity="center"
+        android:orientation="vertical">
 
-    <Button
-        android:id="@+id/btn_main_smsGonder"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:text="Sms Gönder"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
 
-    <TextView
-        android:id="@+id/tv_main_kek"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+            <Button
+                android:id="@+id/open_photo_and_video"
+                android:layout_width="150dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:background="@color/md_lime_900"
+                android:text="Fotoğraf Video"
+                android:textColor="@color/md_white_1000" />
 
-</android.support.constraint.ConstraintLayout>
+            <Button
+                android:layout_marginLeft="5dp"
+                android:id="@+id/open_voice"
+                android:layout_width="150dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:background="@color/md_blue_900"
+                android:text="Ses Kayıt İşlemi"
+                android:textColor="@color/md_white_1000" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/open_map"
+                android:layout_width="150dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:background="@color/md_purple_900"
+                android:text="Haritaya Git"
+                android:textColor="@color/md_white_1000" />
+
+            <Button
+                android:layout_marginLeft="5dp"
+                android:id="@+id/open_web"
+                android:layout_width="150dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:background="@color/md_orange_900"
+                android:text="Web Sayfasına Git"
+                android:textColor="@color/md_white_1000" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/send_sms"
+                android:layout_width="150dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:background="@color/md_green_800"
+                android:text="Sms Gönder"
+                android:textColor="@color/md_white_1000" />
+
+            <Button
+                android:layout_marginLeft="5dp"
+                android:id="@+id/dial_call"
+                android:layout_width="150dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:background="@color/md_red_900"
+                android:text="Arama Yap"
+                android:textColor="@color/md_white_1000" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/btn_main_konuk"
+                android:layout_width="150dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:background="@color/md_teal_900"
+                android:text="Konuklar List"
+                android:textColor="@color/md_white_1000" />
+
+            <Button
+                android:id="@+id/btn_main_ogrenci"
+                android:layout_width="150dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@color/md_brown_900"
+                android:text="Öğrenciler List"
+                android:textColor="@color/md_white_1000" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
