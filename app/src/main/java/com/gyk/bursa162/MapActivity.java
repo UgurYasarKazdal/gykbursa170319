@@ -11,20 +11,24 @@ public class MapActivity extends AppCompatActivity {
 
     Button openMapPage;
 
+    public static String GEO = "geo:41.0138400,28.9496600";
+    public static String SEHIR = "İstanbul";
 
     @Override
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_map);
 
         openMapPage = (Button) findViewById(R.id.open_map_page);
+        openMapPage.setText(SEHIR + "'e git");
 
-
+        // 40.099472, 29.059489
         openMapPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 //İstanbul enlem ve boylam
-                Uri geoLocation = Uri.parse("geo:41.0138400,28.9496600");
+                Uri geoLocation = Uri.parse(GEO);
                 showMap(geoLocation);
             }
         });

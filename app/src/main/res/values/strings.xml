@@ -5,4 +5,18 @@
     <string name="erzurum">Erzurum</string>
     <string name="bursa2">Bursa</string>
     <string name="ankara">Ankara</string>
+    <string name="title_activity_main3">Main3Activity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="ugur">Uğur Yaşar Kazdal</string>
+    <string name="web_adress">www.turkcell.com.tr</string>
+    <string name="cv">Bottom navigation bars make it easy for users to explore and switch between top-level views in a single tap. It should be used when application has three to five top-level destinations.
+The bar contents can be populated by specifying a menu resource file. Each menu item title, icon and enabled state will be used for displaying bottom navigation bar items. Menu items can also be used for programmatically selecting which destination is currently active. It can be done using MenuItem#setChecked(true)</string>
+    <string name="sifirla">Sıfırla</string>
+    <string name="tamam">Tamam</string>
+    <string name="vazgec">Vazgeç</string>
 </resources>

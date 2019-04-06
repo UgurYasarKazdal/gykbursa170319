@@ -3,9 +3,10 @@
     package="com.gyk.bursa162">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
-    <uses-permission android:name="android.permission.RECORD_AUDIO"></uses-permission>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_logo_162_round"
@@ -18,20 +19,20 @@
         <activity android:name=".KonukActivity" />
         <activity android:name=".SmsActivity" />
         <activity android:name=".WebActivity" />
-        <activity android:name=".CameraActivity"/>
-        <activity android:name=".CallActivity"/>
-        <activity android:name=".MapActivity"/>
-        <activity android:name=".MainActivity">
+        <activity android:name=".CameraActivity" />
+        <activity android:name=".CallActivity" />
+        <activity android:name=".MapActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".VoiceActivity" />
+        <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".VoiceActivity">
-
-        </activity>
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".SettingsActivity"></activity>
     </application>
 
 </manifest>
