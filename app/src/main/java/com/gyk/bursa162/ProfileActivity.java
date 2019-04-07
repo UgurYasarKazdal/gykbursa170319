@@ -13,9 +13,7 @@ public class ProfileActivity extends Activity {
     private TextView mTvCity;
     private TextView mTvWeb;
     private TextView mTvCv;
-
     ImageView mImageView;
-
     private final int REQUEST_SETTINGS = 1;
 
     @Override
@@ -34,7 +32,6 @@ public class ProfileActivity extends Activity {
         mTvWeb.setText(getIntent().getStringExtra("web"));
         mTvCv.setText(getIntent().getStringExtra("cv"));
 
-
         findViewById(R.id.imgBtn_profile_settings).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -42,14 +39,11 @@ public class ProfileActivity extends Activity {
                 startActivityForResult(intent, REQUEST_SETTINGS);
             }
         });
-
     }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-
         if (requestCode == REQUEST_SETTINGS) {
-
             if (resultCode == RESULT_OK) {
 
                 mTvName.setText(data.getStringExtra("isim"));
@@ -68,15 +62,12 @@ public class ProfileActivity extends Activity {
                     mTvCv.setVisibility(View.INVISIBLE);
                 } else {
                     mTvCv.setVisibility(View.VISIBLE);
-
                 }
             }
 
             if (resultCode == RESULT_CANCELED) {
                 Toast.makeText(this, "HİÇ AYAR YAPILMADI.", Toast.LENGTH_SHORT).show();
             }
-
-
         }
     }
 
@@ -84,7 +75,6 @@ public class ProfileActivity extends Activity {
     public void goMap(View v) {
         MapActivity.GEO = "geo:41.0315723,40.4765683";
         MapActivity.SEHIR = mTvCity.getText().toString();
-
         startActivity(new Intent(this, MapActivity.class));
     }
 }

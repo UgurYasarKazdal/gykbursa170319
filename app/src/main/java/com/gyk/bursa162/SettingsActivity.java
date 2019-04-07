@@ -60,7 +60,5 @@ public class SettingsActivity extends Activity {
                 mChkShowCV.setChecked(false);
             }
         });
-
-
     }
 }
