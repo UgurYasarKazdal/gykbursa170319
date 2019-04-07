@@ -25,14 +25,19 @@
         <activity android:name=".MainActivity" />
         <activity android:name=".VoiceActivity" />
         <activity android:name=".LoginActivity">
+
+        </activity>
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".SettingsActivity" />
+        <activity
+            android:name=".BottomNavigationActivity"
+            android:label="@string/title_activity_bottom_navigation">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ProfileActivity" />
-        <activity android:name=".SettingsActivity"></activity>
     </application>
 
 </manifest>

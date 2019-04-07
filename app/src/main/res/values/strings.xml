@@ -19,4 +19,16 @@ The bar contents can be populated by specifying a menu resource file. Each menu 
     <string name="sifirla">Sıfırla</string>
     <string name="tamam">Tamam</string>
     <string name="vazgec">Vazgeç</string>
+    <string name="title_activity_bottom_navigation">BottomNavigationActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="help">Help</string>
+    <string name="hello_blank_fragment">ld English helpan (class III strong verb; past tense healp, past participle holpen) "help, support, succor; benefit, do good to; cure, amend," from Proto-Germanic *helpan (cf. Old Norse hjalpa, Old Frisian helpa, Middle Dutch and Dutch helpen, Old High German helfan, German helfen), from PIE root *kelb- "to help" (cf. Lithuanian selpiu "to support, help").
+
+Recorded as a cry of distress from late 14c. Sense of "serve someone with food at table" (1680s) is translated from French servir "to help, stead, avail," and led to helping "portion of food." Related: Helped (c.1300). The Middle English past participle holpen survives in biblical and U.S. dialectal use.
+
+</string>
+    <string name="vucut_kitle_endeksi_hesapla">Vücut Kitle Endeksi Hesapla</string>
+    <string name="health_food">Spices add flavour to a dish without extra calories. If you like heat, add chopped chilli to the salsa for extra oomph. Sweet potatoes cook quickly to a softness that can be mashed without butter.  Each serving provides 467 kcal, 36g protein, 54.5g carbohydrates (of which 26.5g sugars), 10g fat (of which 3g saturates), 8g fibre and 1.5g salt.</string>
 </resources>
